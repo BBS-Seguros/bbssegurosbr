@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BBS Seguros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0a2f5a;
+            color: white;
+        }
+
+       header {
+            background-color: #0a2f5a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #f4f4f4;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: #0a2f5a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(10,47,90,0.6), rgba(10,47,90,0.8)), url('maos-no-volante.jpg') no-repeat center center/cover;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 36px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .hero-section a.button {
+            margin-top: 20px;
+            display: inline-block;
+            background-color: #f4f4f4;
+            color: #0a2f5a;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            background-color: #0a2f5a;
+            color: #f4f4f4;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .hero-form {
+            flex: 1;
+            min-width: 300px;
+            background-color: #a6a6a6;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .hero-form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .hero-form input,
+        .hero-form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        .hero-form button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #0a2f5a;
+            color: #f4f4f4;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .section-coberturas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #d9d9d9;
+            color: #0a2f5a;
+        }
+
+        .coluna {
+            flex: 1;
+            min-width: 300px;
+            margin: 20px;
+        }
+
+        .coluna h2 {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .accordion {
+            margin-top: 10px;
+        }
+
+        .accordion summary {
+            cursor: pointer;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #0a2f5a;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .accordion p {
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .testimonials {
+            background-color: #0a2f5a;
+            padding: 40px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .testimonial-box {
+            background-color: #fff;
+            color: #0a2f5a;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            max-width: 300px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .section-coberturas {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="BBS.png" alt="BBS Seguros" style="width: 60px; height: auto;">
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cotacao">Faça sua Cotação</a>
+            <a href="https://linktr.ee/bbs_corretora" target="_blank">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="inicio">
+        <h1>Segurança e proteção para o seu veículo começa aqui.</h1>
+        <p>Somos a BBS Seguros— especializada em seguros para carros, motos e caminhões.</p>
+        <a class="button" href="#cotacao">Faça sua cotação</a>
+    </section>
+
+ <section class="hero" id="cotacao">
+  <div class="hero-text">
+    <h1 style="font-family: 'DM Serif Display', serif;">Segurança e proteção para seu veículo é aqui!</h1>
+    <p>Receba uma cotação personalizada. Preencha o formulário e entraremos em contato com você!</p>
+  </div>
+
+  <div class="hero-form">
+    <form id="cotacaoForm" action="https://formsubmit.co/bbscorretora01@gmail.com" method="POST">
+      <!-- Impede redirecionamento e reCAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="#">
+
+        <label>Celular:</label>
+      <input type="text" name="celular" required>
+        
+      <label>CPF:</label>
+      <input type="text" name="cpf" required>
+
+      <label>Placa do veículo:</label>
+      <input type="text" name="placa" required>
+
+      <label>Na residência, o veículo é guardado em:</label>
+      <select name="residencia" required>
+        <option>Garagem na residência</option>
+        <option>Garagem condomínio fechado</option>
+        <option>Estacionamento</option>
+        <option>Nem em garagem nem em estacionamento</option>
+      </select>
+
+      <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
+      <select name="faculdade" required>
+        <option>Não utilizo para ir para faculdade / colégio</option>
+        <option>Utilizo e guardo em estacionamento</option>
+        <option>Utilizo, mas não guardo em estacionamento</option>
+      </select>
+
+      <label>No trabalho, o veículo é guardado em estacionamento?</label>
+      <select name="trabalho" required>
+        <option>Não utilizo para ir trabalhar</option>
+        <option>Utilizo e guardo em estacionamento / garagem</option>
+        <option>Utilizo, mas não guardo em estacionamento / garagem</option>
+      </select>
+
+      <button type="submit">Fazer Cotação</button>
+    </form>
+
+    <!-- Mensagem de sucesso -->
+    <div id="mensagemSucesso" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
+      ✔️ Cotação enviada com sucesso! Entraremos em contato em breve.
+    </div>
+  </div>
+</section>
+
+
+    <section class="section-coberturas">
+        <div class="coluna">
+            <h2>Nossas Coberturas:</h2>
+            <details class="accordion"><summary>Roubo e Furto</summary><p>Proteção básica contra roubo ou furto do veículo. Se o carro não for recuperado, você será indenizado conforme a apólice.</p></details>
+            <details class="accordion"><summary>Roubo e Furto + Perda Total</summary><p>Além da proteção contra roubo e furto, cobre perda total por colisões ou danos.</p></details>
+            <details class="accordion"><summary>Roubo e Furto + Perda Total + Terceiros</summary><p>Cobertura completa: roubo, furto, perda total por colisão e danos a terceiros (materiais, corporais ou morais).</p></details>
+            <details class="accordion"><summary>Roubo e Furto + Terceiros</summary><p>Proteção contra roubo e furto + cobertura para danos causados a terceiros.</p></details>
+            <details class="accordion"><summary>Terceiros - RCF</summary><p>Ideal para quem busca uma opção mais econômica.
+Cobre danos materiais e corporais causados a terceiros.</p></details>
+        </div>
+        <div class="coluna">
+            <h2>Assistência 24 horas</h2>
+            <ul>
+                <li>Guincho até 500 KM</li>
+                <li>Troca de Pneus</li>
+                <li>Chaveiro 24h</li>
+                <li>Transporte Domiciliar</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="testimonials">
+  <h2>Depoimentos dos nossos clientes:</h2>
+
+  <div class="testimonial-box">
+    <p class="rating">★★★★★ <strong>5.0</strong></p>
+    <p>“Contratei meu seguro com a BBS e fui muito bem atendido. Recomendo!”</p>
+    <p class="author">João Silva</p>
+  </div>
+
+  <div class="testimonial-box">
+    <p class="rating">★★★★★ <strong>5.0</strong></p>
+    <p>“Precisei acionar o seguro e o processo foi rápido, fácil e com excelente suporte dos funcionários da BBS.”</p>
+    <p class="author">Anna Clara</p>
+  </div>
+
+  <div class="testimonial-box">
+    <p class="rating">★★★★★ <strong>5.0</strong></p>
+    <p>“Meu seguro saiu no precinho e o atendimento foi excelente!”</p>
+    <p class="author">Marcos Vinícius</p>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("cotacaoForm");
+  const mensagem = document.getElementById("mensagemSucesso");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Impede redirecionamento
+
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        mensagem.style.display = "block";
+      } else {
+        alert("Ocorreu um erro. Tente novamente mais tarde.");
+      }
+    }).catch(error => {
+      alert("Erro no envio: " + error.message);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #0A2F5A;
+}
+header .logo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3em 1em;
+}
+.hero h1 {
+    font-size: 2em;
+}
+.hero .botao {
+    background-color: #0A2F5A;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 2em;
+}
+.form-texto {
+    flex: 1;
+    text-align: center;
+}
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+form input, form button {
+    padding: 1em;
+    font-size: 1em;
+}
+.coberturas {
+    background-color: #d1d1d1;
+    padding: 2em;
+}
+.coberturas-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.coluna {
+    flex: 1;
+}
+.testimonials {
+  text-align: center;
+  background-color: #0A2F5A; /* azul escuro */
+  color: white;
+  padding: 40px 20px;
+}
+
+.testimonial-box {
+  background-color: #123D70; /* tom mais claro para destacar */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-box p {
+  margin: 10px 0;
+}
+
+.testimonial-box .rating {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.testimonial-box .author {
+  font-style: italic;
+  font-size: 16px;
+  color: #D1D1D1;
+}
+
